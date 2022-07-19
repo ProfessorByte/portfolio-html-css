@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #282828;
   color: #fff;
   min-width: 220px;
@@ -36,7 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: #282828;
+  background-color: #363636;
   padding: 1em;
   margin: 1em;
   cursor: pointer;
@@ -44,11 +44,11 @@ body {
 }
 
 .presentation:hover {
-  box-shadow: 0.2rem 0.4rem 0.4rem rgba(41, 235, 89, 0.685);
+  box-shadow: 0.2rem 0.4rem 0.4rem #00897b;
 }
 
 .me-figure {
-  flex: 15%;
+  flex: 13%;
 }
 
 .me {
@@ -59,7 +59,7 @@ body {
 }
 
 .biography {
-  flex: 85%;
+  flex: 87%;
   padding: 1em;
   text-align: justify;
 }
@@ -67,6 +67,32 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #111111;
+  /* height: 2000px; */
+}
+
+nav {
+  background-color: #00564d;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 24px;
+  display: inline-block;
+  padding: 0.6em 0.9em;
+}
+
+nav a:hover {
+  background-color: #969696;
 }
 
 @media (max-width: 600px) {
