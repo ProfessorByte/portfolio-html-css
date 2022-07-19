@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: #282828;
+  color: #fff;
+  min-width: 220px;
+}
+
+.back-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 220px;
+}
+
+.presentation-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #282828;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.presentation:hover {
+  box-shadow: 0.2rem 0.4rem 0.4rem rgba(41, 235, 89, 0.685);
+}
+
+.me-figure {
+  flex: 15%;
+}
+
+.me {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.biography {
+  flex: 85%;
+  padding: 1em;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .me {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .me-figure {
+    flex: 30%;
+  }
+
+  .biography {
+    flex: 70%;
+  }
+}
