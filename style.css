@@ -14,7 +14,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #282828;
   color: #fff;
-  min-width: 220px;
+  min-width: fit-content;
 }
 
 h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
@@ -31,7 +31,7 @@ h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
   top: 0;
   left: 0;
   z-index: -1;
-  min-width: 220px;
+  min-width: fit-content;
 }
 
 .presentation-container {
@@ -85,6 +85,8 @@ a {
   /* justify-content: center; */
   align-items: center;
   background-color: #111111;
+  margin: 0;
+  min-width: fit-content;
   /* height: 2000px; */
 }
 
@@ -194,6 +196,28 @@ ul.cloud a::before {
 ul.cloud a:focus::before,
 ul.cloud a:hover::before {
   width: 100%;
+}
+
+.other-knowledge {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1em;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.other-knowledge article {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.other-knowledge img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 15px 0;
 }
 
 @media (max-width: 600px) {
