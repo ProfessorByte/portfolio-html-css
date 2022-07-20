@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Professor Byte</title>
   </head>
@@ -13,35 +20,291 @@
     </video>
 
     <div id="aboutSection" class="presentation-container">
-      <a href="#">
-        <section class="presentation">
-          <figure class="me-figure">
-            <img
-              src="img/PabloPardo.jpg"
-              alt="A photograph of me."
-              class="me"
-            />
-          </figure>
-          <article class="biography">
-            <h1>Hello, I'm <strong>Pablo Pardo</strong>.</h1>
-            <p>
-              I really like video and photo editing, but above all I like
-              programming, I enjoy creating web pages and mobile applications. I
-              am always willing to learn new technologies and live new
-              experiences with other people who also loves technology.
-            </p>
-          </article>
-        </section>
+      <a href="#" class="presentation">
+        <figure class="me-figure">
+          <img src="img/PabloPardo.jpg" alt="A photograph of me." class="me" />
+        </figure>
+        <article class="biography">
+          <h1>Hello, I'm <strong>Pablo Pardo</strong>.</h1>
+          <p>
+            I really like video and photo editing, but above all I like
+            programming, I enjoy creating web pages and mobile applications. I'm
+            always willing to learn new technologies and live new experiences
+            with other people who also loves technology.
+          </p>
+        </article>
       </a>
     </div>
 
     <div class="container">
       <nav>
-        <a href="#aboutSection">About</a>
-        <a href="#">Knowledge</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul>
+          <li>
+            <a href="#aboutSection">About</a>
+          </li>
+          <li>
+            <a href="#knowledge-section">Knowledge</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
+
+      <section id="knowledge-section">
+        <h1 class="title">KNOWLEDGE</h1>
+
+        <ul class="cloud" role="navigation">
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML"
+              target="_blank"
+              data-weight="1"
+            >
+              HTML
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              target="_blank"
+              data-weight="2"
+            >
+              CSS
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              target="_blank"
+              data-weight="3"
+            >
+              JavaScript
+            </a>
+          </li>
+          <li>
+            <a href="https://www.php.net/" target="_blank" data-weight="2">
+              PHP
+            </a>
+          </li>
+          <li>
+            <a href="https://laravel.com/" target="_blank" data-weight="4">
+              Laravel
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/sql/"
+              target="_blank"
+              data-weight="4"
+            >
+              SQL
+            </a>
+          </li>
+          <li>
+            <a href="https://es.reactjs.org/" target="_blank" data-weight="9">
+              React
+            </a>
+          </li>
+          <li>
+            <a href="https://nextjs.org/" target="_blank" data-weight="5">
+              Next.js
+            </a>
+          </li>
+          <li>
+            <a href="https://reactnative.dev/" target="_blank" data-weight="6">
+              React Native
+            </a>
+          </li>
+          <li>
+            <a href="https://expo.dev/" target="_blank" data-weight="4">Expo</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/" target="_blank" data-weight="7">
+              Node.js
+            </a>
+          </li>
+          <li>
+            <a href="https://expressjs.com/" target="_blank" data-weight="5">
+              Express.js
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mysql.com/" target="_blank" data-weight="7">
+              MySQL
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.microsoft.com/es-es/sql-server/"
+              target="_blank"
+              data-weight="3"
+            >
+              SQL Server
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://firebase.google.com/"
+              target="_blank"
+              data-weight="4"
+            >
+              Firebase
+            </a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blank" data-weight="2">
+              Bootstrap
+            </a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/" target="_blank" data-weight="8">
+              Git
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" data-weight="3">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://openjdk.org/" target="_blank" data-weight="4">
+              Java
+            </a>
+          </li>
+          <li>
+            <a href="https://gcc.gnu.org/" target="_blank" data-weight="2">
+              C++
+            </a>
+          </li>
+          <li>
+            <a href="https://unity.com/" target="_blank" data-weight="3">
+              Unity
+            </a>
+          </li>
+          <li>
+            <a href="https://www.anaconda.com/" target="_blank" data-weight="3">
+              Anaconda
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tensorflow.org/"
+              target="_blank"
+              data-weight="9"
+            >
+              Tensorflow
+            </a>
+          </li>
+          <li>
+            <a href="https://keras.io/" target="_blank" data-weight="2">
+              Keras
+            </a>
+          </li>
+          <li>
+            <a href="https://pytorch.org/" target="_blank" data-weight="4">
+              PyTorch
+            </a>
+          </li>
+          <li>
+            <a href="https://opencv.org/" target="_blank" data-weight="6">
+              OpenCV
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://research.google.com/colaboratory/"
+              target="_blank"
+              data-weight="9"
+            >
+              Google Colab
+            </a>
+          </li>
+          <li>
+            <a href="https://numpy.org/" target="_blank" data-weight="5">
+              Numpy
+            </a>
+          </li>
+          <li>
+            <a href="https://scipy.org/" target="_blank" data-weight="1">
+              SciPy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://pandas.pydata.org/"
+              target="_blank"
+              data-weight="7"
+            >
+              Pandas
+            </a>
+          </li>
+          <li>
+            <a href="https://matplotlib.org/" target="_blank" data-weight="4">
+              Matplotlib
+            </a>
+          </li>
+          <li>
+            <a href="https://scikit-learn.org/" target="_blank" data-weight="8">
+              Scikit-Learn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.adobe.com/products/photoshop.html"
+              target="_blank"
+              data-weight="6"
+            >
+              Adobe Photoshop
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.adobe.com/products/aftereffects.html"
+              target="_blank"
+              data-weight="8"
+            >
+              Adobe After Effects
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.adobe.com/products/premiere.html"
+              target="_blank"
+              data-weight="4"
+            >
+              Adobe Premiere Pro
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.maxon.net/cinema-4d"
+              target="_blank"
+              data-weight="7"
+            >
+              Cinema 4D
+            </a>
+          </li>
+          <li>
+            <a href="https://www.blender.org/" target="_blank" data-weight="1">
+              Blender
+            </a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/" target="_blank" data-weight="3">
+              Figma
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
