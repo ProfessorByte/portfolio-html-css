@@ -195,7 +195,7 @@ nav ul li a {
   padding: 0.6em 0.9em;
 }
 
-#knowledgeSection, #projectsSection {
+#knowledgeSection, #projectsSection, #contactSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,7 +288,7 @@ ul.cloud a:hover::before {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: 0.3em;
+  gap: 1.5em;
   align-items: center;
   justify-items: center;
   width: 70%;
@@ -302,7 +302,8 @@ ul.cloud a:hover::before {
   border-radius: 0.6em;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: box-shadow 0.5s ease;
-  margin: 10px;
+  width: 100%;
+  min-width: 291px;
 }
 
 .project-card:hover {
@@ -360,7 +361,6 @@ ul.cloud a:hover::before {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   text-align: justify;
-  min-width: 222px;
 }
 
 .project-tech-list {
@@ -374,12 +374,6 @@ ul.cloud a:hover::before {
 .project-tech-list li {
   margin-right: 10px;
 }
-
-/* @media (max-width: 450px) {
-  .projects-grid {
-    width: 100%;
-  }
-} */
 
 @media (max-width: 600px) {
   .presentation {
