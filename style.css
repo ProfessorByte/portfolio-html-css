@@ -67,8 +67,12 @@ h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
   font-size: 1em;
 }
 
+h1.greeting {
+  text-align: start;
+}
+
 .greeting span {
-  display: inline-block;
+  white-space: nowrap;
   font-family: 'Inconsolata', monospace;
   font-size: 0;
   color: #00ff2a;
@@ -373,6 +377,72 @@ ul.cloud a:hover::before {
 
 .project-tech-list li {
   margin-right: 10px;
+}
+
+.contact-form {
+  display: grid;
+  grid-auto-columns: 100%;
+  gap: 0.6em;
+  width: 90%;
+  max-width: 600px;
+  margin: 60px 0;
+  background-color: #282828;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 1.5em 1.5em;
+  border-radius: 0.6em;
+}
+
+.contact-form p {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.form-input {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #efefef;
+  background-color: #111111;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  border: 1px solid #363636;
+  border-radius: 0.3em;
+}
+
+textarea.form-input {
+  font-family: inherit;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 1em;
+}
+
+.form-submit {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  background-color: #00897b;
+  color: inherit;
+  border-radius: 0.3em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: #00f02866;
+}
+
+.social-container {
+  white-space: nowrap;
+}
+
+.social-container a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.social-container i:hover {
+  animation: icon3d 200ms infinite;
 }
 
 @media (max-width: 600px) {
@@ -687,5 +757,27 @@ ul.cloud a:hover::before {
   78%,
   93% {
     clip-path: none;
+  }
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px rgba(244,67,54,1), -5px -6px rgba(33,150,243,1);
+  }
+
+  25% {
+    text-shadow: -5px -6px rgba(244,67,54,1), 5px 4px rgba(33,150,243,1);
+  }
+
+  50% {
+    text-shadow: 5px -4px rgba(244,67,54,1), -8px 4px rgba(33,150,243,1);
+  }
+
+  75% {
+    text-shadow: -8px -4px rgba(244,67,54,1), -5px -4px rgba(33,150,243,1);
+  }
+
+  100% {
+    text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
   }
 }
